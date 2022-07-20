@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gam</title>
+</head>
+<body>
+
+    <h2>
+        {{descriptionValue}}
+    </h2>
+
+    {{#each gameArray}}
+    <div style="background: yellow; margin-bottom: 15px; padding: 8px;">
+        Name: {{this.name}}
+        <br>
+        Description: {{this.desc}}
+        <br>
+        Age: {{this.age}}
+    </div>
+    {{/each}}
+
+</body>
+</html>

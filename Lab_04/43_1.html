@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Task 4.3</title>
+</head>
+<body>
+    <h1>Task 4.3</h1>
+    <form id="inputform" method="GET" action="/Task4/43">
+        
+        <p>Input Link</p>
+        <input name="link" spellcheck="false" autocomplete="off"><br>
+        
+        <p>Input: </p>
+        <input name="inp1" spellcheck="false" autocomplete="off"><br>
+        <input type="submit" value="Отправить запрос">
+    </form>
+    
+    <button id="btn" name="button" type="button" onclick="btn_click()">Insert</button>
+    
+    <script language = "javascript" >
+        function btn_click(){
+            var form = document.getElementById("inputform");
+            var inp = document.getElementsByTagName('input');
+            var input = document.createElement("input");
+            input.spellcheck = "false";
+            input.name = "inp" + inp.length;
+            input.autocomplete = "off";
+            var br = document.createElement("br");
+            form.insertBefore(input, inp[inp.length - 1]);
+            form.insertBefore(br, inp[inp.length - 1]);
+        }
+    
+    </script>
+</body>
+</html>
+
+
+
+

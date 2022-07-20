@@ -1,0 +1,15 @@
+{
+    "value": "E",
+    "left": {
+        "value": "G",
+        "left": {
+            "value": "E"
+        }
+    },
+    "right": {
+        "value": "O",
+        "left": {
+            "value": "V"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    padding: 30px;
+    background: burlywood;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.btn-class {
+    padding: 6px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}

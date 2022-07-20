@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Task 7.1</title>
+</head>
+<body>
+    <h1>Task 7.1</h1>
+    
+    <button onclick="btn1Clicked()">New Model</button>
+        
+    <button onclick="btn2Clicked()">Cost</button> 
+
+    <button onclick="btn3Clicked()">New warehouse</button>
+        
+    <button onclick="btn4Clicked()">Infor</button>
+    
+    <div id="insert">
+    
+    </div>
+    
+    <script language = "javascript" >
+    
+        function reset(){
+            var parentEl = document.getElementById("insert");
+            parentEl.innerHTML = "";
+            /*
+            alert(parentEl.children.lengh);
+            for (childEl in parentEl.children) {
+                                    alert(childEl.innerHTML);
+
+                parentEl.removeChild(childEl);
+                                                    alert("+++clicked");
+
+            }
+                                    alert("--clicked");*/
+
+        }
+             
+        function btn1Clicked(){
+            alert("check");           
+            reset();
+            var parent = document.getElementById("insert");
+            
+            var form = document.createElement("form");
+            form.id = "form1";
+            form.method = "GET";
+            form.action = "/Task71/1";
+            
+            var p1 = document.createElement("p");
+            p1.innerHTML = "Input Car Type";
+
+            var inp1 = document.createElement("input");
+            inp1.name = "cartype";
+            
+            var p2 = document.createElement("p");
+            p2.innerHTML = "Input Cost";
+
+            var inp2 = document.createElement("input");
+            inp2.name = "carcost";
+            
+            var inp3 = document.createElement("input");
+            inp3.type = "submit";
+            inp3.value = "Insert Type"
+            
+            form.append(p1);
+            form.append(inp1);
+            
+            form.append(p2);
+            form.append(inp2);
+            
+            form.append(inp3);
+            
+            parent.append(form);
+            
+            
+        }
+    
+        function btn2Clicked(){
+            alert("btn2 clicked");
+                
+            reset();
+            var parent = document.getElementById("insert");
+            
+            var form = document.createElement("form");
+            form.id = "form1";
+            form.method = "GET";
+            form.action = "/Task71/2";
+            
+            var p2 = document.createElement("p");
+            p2.innerHTML = "Input Car Type";
+
+            var inp2 = document.createElement("input");
+            inp2.name = "cartype";
+            
+            var inp3 = document.createElement("input");
+            inp3.type = "submit";
+            inp3.value = "Get Cost"
+            
+            form.append(p2);
+            form.append(inp2);
+            
+            form.append(inp3);
+            
+            parent.append(form);
+        }
+    
+        function btn3Clicked(){
+            reset();
+            var parent = document.getElementById("insert");
+            
+            var form = document.createElement("form");
+            form.id = "form1";
+            form.method = "GET";
+            form.action = "/Task71/3";
+
+            var p1 = document.createElement("p");
+            p1.innerHTML = "Input WareHouse";
+
+            var inp1 = document.createElement("input");
+            inp1.name = "warehouse";
+            
+            var p2 = document.createElement("p");
+            p2.innerHTML = "Input Cars";
+            
+            var btn2 = document.createElement("button");
+            btn2.type = "button";
+            btn2.onclick = function btn_click(){
+                var div2 = document.getElementById("div2");
+                var inp = document.getElementsByTagName('input');
+                var input = document.createElement("input");
+                input.spellcheck = "false";
+                input.name = "inp" + inp.length;
+                input.autocomplete = "off";
+                var br = document.createElement("br");
+                div2.append(input);
+                div2.append(br);
+            };
+            btn2.innerHTML = "New type";
+            
+            var div2 = document.createElement("div");
+            div2.id = "div2";
+            
+            
+            var inp3 = document.createElement("input");
+            inp3.type = "submit";
+            inp3.value = "Insert WareHouse"
+            
+            form.append(p1);
+            form.append(inp1);
+            
+            form.append(p2);
+            form.append(div2);
+            form.append(btn2);
+            
+            form.append(inp3);
+            
+            parent.append(form);
+        }
+    
+        function btn4Clicked(){                
+            reset();
+            var parent = document.getElementById("insert");
+            
+            var form = document.createElement("form");
+            form.id = "form1";
+            form.method = "GET";
+            form.action = "/Task71/4";
+
+            var p1 = document.createElement("p");
+            p1.innerHTML = "Input WareHouse";
+
+            var inp1 = document.createElement("input");
+            inp1.name = "warehouse";
+            
+            var inp3 = document.createElement("input");
+            inp3.type = "submit";
+            inp3.value = "Insert Type"
+            
+            form.append(p1);
+            form.append(inp1);
+            
+            form.append(inp3);
+            
+            parent.append(form);
+        }
+    
+        /*function btn_click(){
+            //alert("check-----------");
+            var div2 = document.getElementById("div2");
+            var inp = document.getElementsByTagName('input');
+            var input = document.createElement("input");
+            input.spellcheck = "false";
+            input.name = "inp" + inp.length;
+            input.autocomplete = "off";
+            var br = document.createElement("br");
+            div2.append(input);
+            div2.append(br);
+        }*/
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Task</title>
+</head>
+<body>
+    <h1>Task<h1>
+
+    <button onclick="btnIncClicked()">Inc</button>    
+    <button onclick="btnDecClicked()">Dec</button>
+    <script>
+        function btnIncClicked() {
+            /*
+            var req = new XMLHttpRequest();
+            req.open("GET", "localhost:5015/Task/2?asc=True", false);
+            req.send(null);*/
+            location.replace("http://localhost:5015/Task/2?asc=True");
+
+        }
+        function btnDecClicked() {
+            /*
+            var req = new XMLHttpRequest();
+            req.open("GET", "localhost:5015/Task/2?asc=True", false);
+            req.send(null);*/
+            location.replace("http://localhost:5015/Task/2?asc=False");
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
